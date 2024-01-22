@@ -2,6 +2,8 @@
 
 This script automates the process of installing Drupal on a Linux server. It performs tasks such as updating the system, installing necessary packages, setting up the database, and configuring Apache and PHP.
 
+⚠️The script will install drupal in HTTP ⚠️
+
 ## How it Works
 
 The script performs the following steps:
