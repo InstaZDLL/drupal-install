@@ -34,10 +34,32 @@ Please handle the `db_credentials.txt` file securely as it contains sensitive in
 
 ## Issues
 
-If you encounter this error message in drupal dash board follow these steps :
+If you encounter this error message `The trusted_host_patterns parameter is not configured in settings.php` in drupal dashboard follow these steps :
 
 ![Issues A](https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/images/ScreenshotA.png)
 ![Issues B](https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/images/ScreenshotB.png)
+
+### Do this :
+
+First, edit the `setting.php`
+
+```bash
+sudo vi /var/www/html/drupal/sites/default/settings.php
+```
+
+find the line where you see this :
+
+`# $settings['trusted_host_patterns'] = [];`
+
+Uncomment and replace it with :
+
+`['^YOUR PUBLIC HOST IP$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
+
+### Exemple :
+`['^119\\.151\\.218\\.9$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
+
+And the error should be fixed.
+
 
 ## Contributions
 
