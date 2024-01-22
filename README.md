@@ -23,7 +23,7 @@ The script performs the following steps:
 To use this script, simply run it on your Linux server. The script will handle the rest:
 
 ```bash
-./drupal_installation_script.sh
+./drupal-install.sh
 ```
 
 At the end of the script, a file named `db_credentials.txt` will be created in the home directory of the current user. This file contains the database username and a randomly generated password.
@@ -38,4 +38,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
