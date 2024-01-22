@@ -23,7 +23,7 @@ The script performs the following steps:
 To use this script, simply run it on your Linux server. The script will handle the rest:
 
 ```bash
-./drupal-install.sh
+wget -O - https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/drupal-install.sh | sudo bash
 ```
 
 At the end of the script, a file named `db_credentials.txt` will be created in the home directory of the current user. This file contains the database username and a randomly generated password.
@@ -31,6 +31,10 @@ At the end of the script, a file named `db_credentials.txt` will be created in t
 ## Note
 
 Please handle the `db_credentials.txt` file securely as it contains sensitive information.
+
+## Issues
+
+If
 
 ## Contributions
 
