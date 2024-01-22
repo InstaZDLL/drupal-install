@@ -36,7 +36,7 @@ Please handle the `db_credentials.txt` file securely as it contains sensitive in
 
 If you encounter this error message in drupal dash board follow these steps :
 
-![Issues A]([https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/images/ScreenshotA.png)
+![Issues A](https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/images/ScreenshotA.png)
 ![Issues B](https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/images/ScreenshotB.png)
 
 ## Contributions
