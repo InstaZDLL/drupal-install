@@ -24,7 +24,7 @@ The script performs the following steps:
 
 5. **Drupal Installation**: The script downloads and extracts Drupal in the appropriate directory, sets the correct permissions, and configures Apache to serve the Drupal site.
 
-6. **Final Configuration**: The script makes necessary changes in `php.ini` and `settings.php` files, restarts Apache, and displays the database credentials.
+6. **Final Configuration**: The script makes necessary changes in `php.ini` file, restarts Apache, and displays the database credentials.
 
 ## Usage
 
