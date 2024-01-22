@@ -4,6 +4,8 @@ This script automates the process of installing Drupal on a Linux server. It per
 
 ⚠️The script will install drupal in HTTP ⚠️
 
+⚠️ The script only works on Debian 11 bullseye for now⚠️ 
+
 ## How it Works
 
 The script performs the following steps:
