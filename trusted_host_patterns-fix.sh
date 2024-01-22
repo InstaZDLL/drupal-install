@@ -11,4 +11,4 @@ sudo cp $FILE $FILE.bak
 public_ip=$(curl -s ifconfig.me)
 
 # Uncomment the line and change its value
-sudo sed -i "s/# \$settings\['trusted_host_patterns'\] = \[\];/\$settings\['trusted_host_patterns'\] = ['^\\\$public_ip\\$', '^127\\\\.0\\\\.0\\\\.1\\$', '^localhost\\$',];/g" $FILE
+sudo sed -i "s/# \$settings\['trusted_host_patterns'\] = \[\];/\$settings\['trusted_host_patterns'\] = ['^${public_ip}\$', '^127\\.0\\.0\\.1\\$', '^localhost$',];/g" $FILE
