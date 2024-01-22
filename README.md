@@ -66,7 +66,7 @@ Uncomment and replace it with :
 ### Exemple :
 `['^119\\.151\\.218\\.9$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
 
-Save the file (if you're using vim use `:wq!`) and the error should be fixed.
+Save the file (if you're using vim use `:wq!`) and the error should be fixed with a `sudo systemctl restart apache2`.
 
 
 ## Contributions
