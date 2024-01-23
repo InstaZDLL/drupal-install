@@ -16,7 +16,7 @@ The script performs the following steps:
 
 1. **System Update**: The script starts by updating the system's package list and upgrading all installed packages.
 
-2. **Apache Installation**: The script installs Apache and starts the service.
+2. **Apache Installation**: The script installs Apache2 and starts the service.
 
 3. **PHP Installation**: The script adds the necessary repositories and installs PHP-8.2 along with necessary extensions.
 
