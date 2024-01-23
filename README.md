@@ -61,10 +61,10 @@ find the line where you see this :
 
 Uncomment and replace it with :
 
-`['^YOUR PUBLIC HOST IP$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
+`$settings['trusted_host_patterns'] = ['^YOUR PUBLIC HOST IP$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
 
 ### Exemple :
-`['^119\\.151\\.218\\.9$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
+`$settings['trusted_host_patterns'] = ['^119\\.151\\.218\\.9$', '^127\\.0\\.0\\.1\\$', '^localhost$',];`
 
 Save the file (if you're using vim use `:wq!`) and the error should be fixed with a `sudo systemctl restart apache2`.
 
