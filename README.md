@@ -18,7 +18,7 @@ The script performs the following steps:
 
 2. **Apache Installation**: The script installs Apache and starts the service.
 
-3. **PHP Installation**: The script adds the necessary repositories and installs PHP along with necessary extensions.
+3. **PHP Installation**: The script adds the necessary repositories and installs PHP-8.2 along with necessary extensions.
 
 4. **MariaDB Installation**: The script installs MariaDB, starts the service, and sets up a new database and user for Drupal.
 
