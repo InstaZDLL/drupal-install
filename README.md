@@ -3,7 +3,8 @@
 This script automates the process of installing Drupal on a Linux server. It performs tasks such as updating the system, installing necessary packages, setting up the database, and configuring Apache and PHP.
 
 [ ![GitHub Release](https://img.shields.io/github/v/release/InstaZDLL/drupal-install?style=for-the-badge)](https://img.shields.io/github/v/release/InstaZDLL/drupal-install?sort=date&display_name=release&style=for-the-badge
-)  ![GitHub License](https://img.shields.io/github/license/InstaZDLL/drupal-install?style=for-the-badge) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/InstaZDLL/drupal-install?style=for-the-badge)
+)  ![GitHub License](https://img.shields.io/github/license/InstaZDLL/drupal-install?style=for-the-badge) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/InstaZDLL/drupal-install?style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/InstaZDLL/drupal-install/total?style=for-the-badge)
+
 
 
 ⚠️The script will install drupal in HTTP ⚠️
