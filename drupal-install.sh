@@ -54,16 +54,16 @@ FLUSH PRIVILEGES;
 cd /var/www/html
 
 # Download Drupal
-wget https://ftp.drupal.org/files/projects/drupal-10.2.2.zip
+wget https://ftp.drupal.org/files/projects/drupal-10.2.3.zip
 
 # Unzip the downloaded file
-unzip drupal-10.2.2.zip
+unzip drupal-10.2.3.zip
 
 # Rename the extracted directory
-mv drupal-10.2.2/ drupal/
+mv drupal-10.2.3/ drupal/
 
 # Remove the downloaded zip file
-rm drupal-10.2.2.zip
+rm drupal-10.2.3.zip
 
 # Change the owner of the drupal directory
 chown -R www-data:www-data drupal/
