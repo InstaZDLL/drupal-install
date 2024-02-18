@@ -7,11 +7,11 @@ This script automates the process of installing Drupal on a Linux server. It per
 
 
 
-⚠️The script will install drupal in HTTP ⚠️
+⚠️The script will install drupal in HTTP without Composer ⚠️
 
-⚠️ The script only works on Debian 11 bullseye for now⚠️ 
+⚠️ The script only works on Debian 11 and 12 for now⚠️ 
 
-[![Terminal](https://badgen.net/badge/Status/untested/red?icon=terminal)](#)
+[![Terminal](https://badgen.net/badge/Status/tested/green?icon=terminal)](#)
 
 ## How it Works
 
@@ -71,6 +71,10 @@ Uncomment and replace it with :
 
 Save the file (if you're using vim use `:wq!`) and the error should be fixed with a `sudo systemctl restart apache2`.
 
+## TODO
+
+- [ ] Supports multiple Linux distributions
+- [ ] Upgrade option to update the old Drupal version to the latest one.
 
 ## Contributions
 
