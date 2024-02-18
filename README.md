@@ -11,7 +11,7 @@ This script automates the process of installing Drupal on a Linux server. It per
 
 ⚠️ The script only works on Debian 11 bullseye for now⚠️ 
 
-[![Terminal](https://badgen.net/badge/Status/tested/green?icon=terminal)](#)
+[![Terminal](https://badgen.net/badge/Status/untested/red?icon=terminal)](#)
 
 ## How it Works
 
