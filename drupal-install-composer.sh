@@ -62,8 +62,8 @@ sudo mv composer.phar /usr/local/bin/composer
 # Allow Composer to run as super user and download and install Drupal with Composer
 COMPOSER_ALLOW_SUPERUSER=1 composer create-project drupal/recommended-project drupal/ --no-interaction
 
-# Download and install Drupal with Composer
-#sudo composer create-project drupal/recommended-project drupal/ --no-interaction
+# Unset the COMPOSER_ALLOW_SUPERUSER environment variable
+unset COMPOSER_ALLOW_SUPERUSER
 
 # Change the owner of the drupal directory
 chown -R www-data:www-data drupal/
