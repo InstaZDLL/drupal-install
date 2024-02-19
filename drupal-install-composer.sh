@@ -27,7 +27,6 @@ sudo apt-get update -y
 # Install PHP8.2 and necessary extensions
 sudo apt-get install php8.3 php8.3-common php8.3-curl libapache2-mod-php php8.3-imap php8.3-redis php8.3-cli php8.3-snmp php8.3-xml php8.3-zip php8.3-mbstring php8.3-mysql php8.3-gd php-gd php-xml php-mysql php-mbstring -y
 
-
 # Check PHP version
 php -v
 
