@@ -25,7 +25,8 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 sudo apt-get update -y
 
 # Install PHP8.2 and necessary extensions
-sudo apt-get install php8.2 php8.2-common php8.2-curl libapache2-mod-php php8.2-imap php8.2-redis php8.2-cli php8.2-snmp php8.2-xml php8.2-zip php8.2-mbstring php8.2-mysql php8.2-gd php-gd php-xml php-mysql php-mbstring -y
+sudo apt-get install php8.3 php8.3-common php8.3-curl libapache2-mod-php php8.3-imap php8.3-redis php8.3-cli php8.3-snmp php8.3-xml php8.3-zip php8.3-mbstring php8.3-mysql php8.3-gd php-gd php-xml php-mysql php-mbstring -y
+
 
 # Check PHP version
 php -v
@@ -38,8 +39,6 @@ sudo systemctl start mariadb && sudo systemctl enable mariadb
 
 # Check MariaDB status
 sudo systemctl --no-pager status mariadb
-
-###
 
 # Generate a random password
 password=$(openssl rand -base64 32)
@@ -117,6 +116,12 @@ sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/cli/php.i
 # Uncomment extensions in php.ini
 sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.2/apache2/php.ini
 sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/apache2/php.ini
+
+# Get the public IP address
+public_ip=$(curl -s ifconfig.me)
+
+# Append the new line after the trusted_host_patterns line in the settings.php file
+sudo sed -i "/# *\$settings\['trusted_host_patterns'\] = \[\];/a \$settings['trusted_host_patterns'] = ['^${public_ip//./\\.}$', '^127\\.0\\.0\\.1$', '^localhost$',];" /var/www/html/drupal/sites/default/settings.php
 
 # Restart Apache
 sudo systemctl restart apache2
