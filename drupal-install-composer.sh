@@ -117,15 +117,6 @@ sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/cli/php.i
 sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.2/apache2/php.ini
 sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/apache2/php.ini
 
-# Get the public IP address
-public_ip=$(curl -s ifconfig.me)
-
-# Replace dots with escaped dots
-public_ip_escaped=$(echo "$public_ip" | awk 'BEGIN{FS=OFS="."} {$1=$1; print $0}' | sed 's/\./\\./g')
-
-# Append the new line after the trusted_host_patterns line in the settings.php file
-sudo sed -i "/# *\$settings\['trusted_host_patterns'\] = \[\];/a \$settings['trusted_host_patterns'] = ['^${public_ip_escaped}$', '^127\\.0\\.0\\.1$', '^localhost$',];" /var/www/html/drupal/web/sites/default/settings.php
-
 # Restart Apache
 sudo systemctl restart apache2
 clear
