@@ -59,11 +59,11 @@ cd /var/www/html
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
-# Allow Composer to run as super user
-export COMPOSER_ALLOW_SUPERUSER=1
+# Allow Composer to run as super user and download and install Drupal with Composer
+COMPOSER_ALLOW_SUPERUSER=1 composer create-project drupal/recommended-project drupal/ --no-interaction
 
 # Download and install Drupal with Composer
-composer create-project drupal/recommended-project drupal/ --no-interaction
+#sudo composer create-project drupal/recommended-project drupal/ --no-interaction
 
 # Change the owner of the drupal directory
 chown -R www-data:www-data drupal/
