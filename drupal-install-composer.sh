@@ -1,5 +1,5 @@
 #!/bin/bash
-#Début du scripte /  Made by © 2022-2023 Ethan Besson
+#Début du script /  Made by © 2022-2023 Ethan Besson
 
 # Update and upgrade the system
 sudo apt-get update -y && sudo apt-get upgrade -y
