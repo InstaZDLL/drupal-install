@@ -109,12 +109,12 @@ apachectl -t
 sudo systemctl restart apache2
 
 # Uncomment extensions in php.ini
-sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.2/cli/php.ini
-sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/cli/php.ini
+sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.3/cli/php.ini
+sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.3/cli/php.ini
 
 # Uncomment extensions in php.ini
-sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.2/apache2/php.ini
-sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.2/apache2/php.ini
+sudo sed -i 's/;extension=gd/extension=gd/' /etc/php/8.3/apache2/php.ini
+sudo sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.3/apache2/php.ini
 
 # Restart Apache
 sudo systemctl restart apache2
