@@ -7,7 +7,7 @@ This script automates the process of installing Drupal on a Linux server. It per
 
 
 
-⚠️The script will install drupal in HTTP without Composer ⚠️
+⚠️The script will install drupal in HTTP ⚠️
 
 ⚠️ The script only works on Debian 11 and 12 for now⚠️ 
 
@@ -31,10 +31,16 @@ The script performs the following steps:
 
 ## Usage
 
-To use this script, simply run it on your Linux server. The script will handle the rest:
+To use this script, simply run it on your Linux server. The script will handle the rest : ![Recommended](https://img.shields.io/static/v1?label=&message=Recommended&color=%2331BB12)
 
 ```bash
-wget -O - https://github.com/InstaZDLL/drupal-install/releases/download/v1.0.1/drupal-install.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/drupal-install-composer-apache2.sh | sudo bash
+```
+
+If you want to use the manual installation whiout the compuser use this : ![Not Recommended](https://img.shields.io/static/v1?label=&message=Not+Recommended&color=yellow)
+
+```bash
+wget -O - https://github.com/InstaZDLL/drupal-install/releases/download/v1.1.0/drupal-install.sh | sudo bash
 ```
 
 At the end of the script, a file named `db_credentials.txt` will be created in the home directory of the current user. This file contains the database username and a randomly generated password.
