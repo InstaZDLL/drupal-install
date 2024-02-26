@@ -37,7 +37,7 @@ To use this script, simply run it on your Linux server. The script will handle t
 wget -O - https://raw.githubusercontent.com/InstaZDLL/drupal-install/main/drupal-install-composer-apache2.sh | sudo bash
 ```
 
-If you want to use the manual installation whiout the compuser use this : ![Not Recommended](https://img.shields.io/static/v1?label=&message=Not+Recommended&color=yellow)
+If you want to use the manual installation without the composer, use this : ![Not Recommended](https://img.shields.io/static/v1?label=&message=Not+Recommended&color=yellow)
 
 ```bash
 wget -O - https://github.com/InstaZDLL/drupal-install/releases/download/v1.1.0/drupal-install.sh | sudo bash
